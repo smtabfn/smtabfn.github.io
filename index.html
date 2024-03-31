@@ -5,78 +5,78 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title></title>
 <style>
-   body {
-     font-family: Arial, sans-serif;
-     margin: 0;
-     padding: 0;
-     background-color: #f0f0f0;
-   }
-   .container {
-     max-width: 600px;
-     margin: 50px auto;
-     padding: 20px;
-     background-color: #fff;
-     border-radius: 8px;
-     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-   }
-   h1 {
-     text-align: center;
-   }
-   .question {
-     margin-bottom: 20px;
-   }
-   .answer-input {
-     width: calc(100% - 100px);
-     padding: 10px;
-     border: 1px solid #ccc;
-     border-radius: 5px;
-     margin-bottom: 10px;
-   }
-   .answer-btn {
-     width: 100px;
-     padding: 10px;
-     background-color: #007bff;
-     border: none;
-     border-radius: 5px;
-     color: #fff;
-     cursor: pointer;
-   }
-   .answer-btn:hover {
-     background-color: #0056b3;
-   }
-   .message {
-     margin-top: 20px;
-     padding: 20px;
-     background-color: #007bff;
-     color: #fff;
-     border-radius: 8px;
-     text-align: center;
-     display: none;
-   }
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+    }
+    .container {
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+        text-align: center;
+    }
+    .question {
+        margin-bottom: 20px;
+    }
+    .answer-input {
+        width: calc(100% - 100px);
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+    .answer-btn {
+        width: 100px;
+        padding: 10px;
+        background-color: #007bff;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        cursor: pointer;
+    }
+    .answer-btn:hover {
+        background-color: #0056b3;
+    }
+    .message {
+        margin-top: 20px;
+        padding: 20px;
+        background-color: #007bff;
+        color: #fff;
+        border-radius: 8px;
+        text-align: center;
+        display: none;
+    }
 </style>
 </head>
 <body>
 <div class="container">
-   <h1></h1>
-   <div class="question">
-     <p>Polnoye imya i familiya Kokfel'da (otvet na pol'skom yazyke)</p>
-     <input type="text" class="answer-input" id="answer">
-     <button class="answer-btn" onclick="checkAnswer()">Answer</button>
-   </div>
-   <div class="message" id="message">
-     YA znayu, chto ty nichego ne mozhesh' skazat', prosto skazhi mne, byla li utechka kakoy-libo informatsii iz gruppy. Otvetit' da ili net na diskorde
-   </div>
+    <h1></h1>
+    <div class="question">
+        <p>Polnoye imya i familiya Kokfel'da (otvet na pol'skom yazyke)</p>
+        <input type="text" class="answer-input" id="answer">
+        <button class="answer-btn" onclick="checkAnswer()">Answer</button>
+    </div>
+    <div class="message" id="message">
+        YA znayu, chto ty nichego ne mozhesh' skazat', prosto skazhi mne, byla li utechka kakoy-libo informatsii iz gruppy. Otvetit' da ili net na diskorde
+    </div>
 </div>
 
 <script>
 function checkAnswer() {
-   var answer = document.getElementById("answer").value.trim().toLowerCase();
-   if (answer === "konrad ostasz") {
-     document.getElementById("message").style.display = "block";
-     document.querySelector(".question").style.display = "none";
-   } else {
-     alert("Wrong answer. Try again.");
-   }
+    var answer = document.getElementById("answer").value.trim().toLowerCase();
+    if (answer === "konrad ostasz") {
+        document.getElementById("message").style.display = "block";
+        document.querySelector(".question").style.display = "none";
+    } else {
+        alert("Wrong answer. Try again.");
+    }
 }
 </script>
 </body>
